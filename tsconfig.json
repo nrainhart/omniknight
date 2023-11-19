@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"lib": ["esnext"],
+		"types": [
+			"@cloudflare/workers-types",
+			"jest",
+			"jest-environment-miniflare/globals"
+		],
+		"moduleResolution": "node",
+		"strict": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"baseUrl": "./"
+	},
+	"include": ["src/**/*", "bindings.d.ts"]
+}

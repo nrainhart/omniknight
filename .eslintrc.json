@@ -1,0 +1,24 @@
+{
+	"root": true,
+	"extends": ["plugin:prettier/recommended"],
+	"parser": "@typescript-eslint/parser",
+	"plugins": ["@typescript-eslint", "prettier"],
+	"rules": {
+		"no-confusing-arrow": "error",
+		"no-implicit-coercion": "error",
+		"no-unneeded-ternary": [
+			"error",
+			{
+				"defaultAssignment": false
+			}
+		],
+		"prefer-const": "warn",
+		"prefer-arrow-callback": "warn",
+		"prefer-object-spread": "warn",
+		"prefer-rest-params": "warn",
+		"prefer-spread": "warn",
+		"prefer-template": "warn",
+		"quotes": "error",
+		"spaced-comment": "off"
+	}
+}

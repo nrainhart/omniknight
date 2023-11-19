@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<script type="module">
+	import * as Y from "https://cdn.jsdelivr.net/npm/yjs@13.5.46/+esm";
+	import { WebsocketProvider } from "https://cdn.jsdelivr.net/npm/y-websocket@1.4.5/+esm";
+
+	const url = new URL(window.location.href);
+	url.protocol = url.protocol.startsWith("https") ? "wss:" : "ws";
+	url.pathname = "/chat";
+
+	const doc = new Y.Doc();
+	const wsProvider = new WebsocketProvider(url.toString(), "my-roomname", doc);
+
+	wsProvider.on("status", event => {
+		console.log(event.status); // logs "connected" or "disconnected"
+	});
+</script>
+<body>
+<h1>Hi!</h1>
+<h4>Sup</h4>
+</body>
+</html>

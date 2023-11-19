@@ -1,0 +1,40 @@
+.idea
+.DS_Store
+npm-debug.log
+dist
+coverage
+!src/assets/icons
+data/schema.json
+tsconfig.tsbuildinfo
+
+.mf
+
+# dependencies
+/node_modules
+/server/node_modules
+
+# production
+/build
+/build-playground
+/server/build
+
+out
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pack-lock.json
+.vercel
+
+.env*.local
+
+babel*
+.babel*
+
+public/lang/en-US.json
+public/lang/ice.json
+public/lang/isl.json
+
+# secrets
+.dev.vars
+.wrangler

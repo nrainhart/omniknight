@@ -1,18 +1,7 @@
-# ʕ •́؈•̀) `Omniknight`
+# `Omniknight`
 
-
-```
-         *_   _   _   _   _   _ *
- ^       | `_' `-' `_' `-' `_' `|       ^
- |       |        CRDT          |       |
- |  (*)  |_   _   _   _   _   _ |  \^/  |
- | _<">_ | `_' `-' `_' `-' `_' `| _(#)_ |
-o+o \ / \0                      0/ \ / (=)
- 0'\ ^ /\/                      \/\ ^ /`0
-   /_^_\ |                      | /_^_\
-   || || |                      | || ||
-   d|_|b_T______________________T_d|_|b
-```
+Omniknight is a port of [y-websocket](https://github.com/yjs/y-websocket) that runs on the [Cloudflare Workers](https://workers.cloudflare.com/) ecosystem,
+leveraging [Durable Objects](https://developers.cloudflare.com/durable-objects/) to coordinate clients.
 
 ## How to run
 
